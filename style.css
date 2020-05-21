@@ -1,0 +1,407 @@
+@font-face {
+  font-family: Lato;
+  src: url(assets/fonts/Lato-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(assets/fonts/Lato-Bold.ttf);
+  font-weight: bold;
+}
+
+h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+p{    
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+input[type=submit]{
+    cursor: pointer;
+}
+
+body{
+
+    font-family: 'Lato',sans-serif;
+    font-size:18px;
+    font-weight: normal;
+
+}
+
+.notifikasi_panel {    
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    background: #e5e5e5;       
+    width: 100vw;    
+    box-shadow: 5px 0px 5px #7d7d7dbf;
+    z-index: 9999999;    
+    overflow-y:hidden;
+    height: 75px;
+    transition: height .5s ease;    
+    -webkit-transition: height .5s ease; 
+}
+
+
+.animate.slideUp {
+    height: 0; 
+}
+
+.notifikasi_panel .container {
+    max-width: 720px;
+    margin: auto;    
+}
+
+.notifikasi {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.notify-text{
+    flex: 1;
+    margin: 0 10px;
+}
+
+.notifikasi p {
+    padding: 0 15px;
+    line-height: 1.3;
+    color:#484040;
+}
+
+.notifikasi a {
+    color:#1d12e9;
+}
+
+
+
+.btn {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn a {
+    color: #fff;
+    display: inline-block;
+    line-height: 1.8;
+    height: 100%;
+    width: 100%;
+}
+
+.btn.btn-primary{
+    width: 80px;
+    background: #007bc1;
+}
+
+.btn.btn-primary{
+    color: #fff;
+}
+
+.btn.btn-transparent{
+    border:2px solid #fff;
+}
+
+
+
+.banner{
+  height: 100vh;
+}
+
+header .banner-wrapper {      
+    position: relative;    
+    width:100%;
+    height:100%;
+    background-position: center top;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #007bc1;
+    z-index: 9999;  
+    display: flex;  
+    justify-content: center;
+}
+
+.logo-brand {
+    position: absolute;
+    left: 30px;
+    width: 50px;
+    top: 30px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.banner-text { 
+    animation:fadeInUp 2s forwards;   
+    -webkit-animation:fadeInUp 2s forwards;   
+    align-self: center; 
+    text-align: center;   
+}
+
+.contact-btn {
+    width: 200px;
+    margin: 35px auto;
+    border-radius:2px;
+    transition:background 1s ease;
+    -webkit-transition:background .5s ease;
+    
+}
+.contact-btn:hover {
+    background:#fff;    
+}
+
+.contact-btn a{
+    font-weight:bold;
+}
+
+.contact-btn:hover a{
+    color:#004a75;
+}
+
+section{
+    padding: 70px 0px;
+}
+
+section .container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.services .box {border: 1px solid #b7b7b7;padding: 10px;box-shadow: 0px 0px 3px 1px #ffffffa1 inset, 0px 1px 1px 0px #ffffffd4;overflow: hidden;}
+
+
+.service-heading {
+    padding: 35px 0;
+    text-align: center;
+}
+
+.service-heading h3 {
+    font-size: 2rem;
+}
+
+.service-heading p {
+    color: #464646;
+}
+
+.box-text p {
+    font-size: 14px;
+    color: #525252;
+    margin-bottom: 0;
+}
+
+.box-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.box-head i {
+    color: #b7b7b7;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.box .box-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.copyright {
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    background: #050328;
+    font-size: 14px;
+    font-weight: 400;
+    font-kerning: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.copyright p {
+    margin-bottom: 0px;
+}
+
+.get-latest-update {       
+    position: fixed;
+    bottom: 0;
+    background: #007bc1e6;
+    width: 50%;
+    padding: 30px;
+    z-index: 9999;
+    transform: translateY(400px); 
+    -webkit-transform: translateY(400px); 
+    transition: transform .5s ease; 
+    -webkit-transition: transform .5s ease; 
+}
+
+.get-latest-update.shown{
+    transform: translateY(0); 
+    -webkit-transform: translateY(0); 
+}
+
+
+.get-latest-update span{
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    font-size: small;
+    color:#fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.get-lastest-wrap h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.get-lastest-wrap p {
+    font-size: 16px;
+    color: #fff;
+    -webkit-font-smoothing:antialiased;
+}
+
+.subcriber {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #a9a8a8;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a9a8a8;
+}
+
+::placeholder {
+  color: #a9a8a8;
+}
+
+.btn.count {
+    padding: 0;
+}
+
+.btn.count input {
+    background: #ff8000;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+input {width: 100%;border: none;padding: 8px 10px;font-weight: bold;}
+
+.email {flex: 1;margin-right: 10px;}
+
+@keyframes fadeInUp {
+  0% {transform: translateY(400px);}
+  100% {transform: translateY(0);}
+}
+
+@media screen and (max-width: 960px){
+    .services {    
+    grid-template-columns: 1fr 1fr;    
+    }   
+}
+
+@media screen and (max-width: 768px){
+    br{
+        display: none;
+    }
+    section .container{
+        padding-left: 30px;
+        padding-right:30px;
+    }
+    .notifikasi_panel{        
+        height: 200px;
+    }
+    .notifikasi_panel .container{
+        padding: 10px;
+    }
+    .notifikasi {
+        flex-flow: column;
+    }
+
+    .notify-btn {    
+        margin: 10px;        
+    }
+
+    .notifikasi p{
+        padding: 0;
+    }
+
+    .services {    
+    grid-template-columns: 1fr;    
+    }   
+
+    .get-latest-update {
+        width: 100%;
+    }
+
+    .subcriber {
+        display: block;
+    }
+
+    .btn.count{
+        margin-top:10px;
+        width: 100%;
+    }
+
+    .email{
+        margin-right: 0;
+    }
+
+    input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .notifikasi_panel{        
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    section .container{
+        width: 1240px;
+    }
+}

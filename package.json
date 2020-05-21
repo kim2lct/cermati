@@ -1,0 +1,19 @@
+{
+  "name": "cermati",
+  "version": "1.0.0",
+  "description": "Cermati Pre Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"just testing\""
+  },
+  "keywords": [
+    "responsive",
+    "website"
+  ],
+  "author": "Wira",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "jquery": "^3.5.1"
+  }
+}
