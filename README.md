@@ -1,6 +1,5 @@
 # Cermati Pre Test
 
-***
 
 ## Software 
 - PHP 7, jQuery, FontAwesome , Node Package
@@ -10,5 +9,4 @@
 
 *Thanks*
 
-***
 
